@@ -12454,9 +12454,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _public_global_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../public/global.css */ "./public/global.css");
-/* harmony import */ var _public_global_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_public_global_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../theme */ "./theme.js");
+/* harmony import */ var _public_global_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../public/global.css */ "./public/global.css");
+/* harmony import */ var _public_global_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_public_global_css__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -12472,13 +12473,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
 
 
 
-var theme = {
-  colors: {
-    primary: '#000000',
-    secondary: '#ffffff',
-    tertiary: '#08c4e6'
-  }
-};
+
 
 var ThemedApp =
 /*#__PURE__*/
@@ -12497,17 +12492,17 @@ function (_App) {
       var _this$props = this.props,
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
-      return __jsx(styled_components__WEBPACK_IMPORTED_MODULE_12__["ThemeProvider"], {
-        theme: theme,
+      return __jsx(styled_components__WEBPACK_IMPORTED_MODULE_11__["ThemeProvider"], {
+        theme: _theme__WEBPACK_IMPORTED_MODULE_12__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 17
         },
         __self: this
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 18
         },
         __self: this
       })));
@@ -12518,6 +12513,26 @@ function (_App) {
 }(next_app__WEBPACK_IMPORTED_MODULE_10___default.a);
 
 
+
+/***/ }),
+
+/***/ "./theme.js":
+/*!******************!*\
+  !*** ./theme.js ***!
+  \******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var theme = {
+  colors: {
+    primary: '#000000',
+    secondary: '#ffffff',
+    tertiary: '#08c4e6'
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (theme);
 
 /***/ }),
 
